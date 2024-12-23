@@ -25,7 +25,7 @@ window.addEventListener("load", function(){
     function showPopup(message) {
         const popup = createPopup(message);    
     }
-    showPopup("This story is currently under embargo and is being redrafted. It will be published here in 6 months. For access to the graphics, please David Paiz-Torres at daptorz@gmail.com");
+    showPopup("This story is currently under embargo and is being redrafted. It will be published here in 6 months. For access to the graphics, please contact David Paiz-Torres at daptorz@gmail.com");
        
 });
 
