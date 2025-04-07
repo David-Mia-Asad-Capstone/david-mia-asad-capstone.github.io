@@ -5,6 +5,12 @@ body{
     margin-right:auto;
     margin-left:auto;
 }
+#resturant_photo{
+    
+    border: 1px solid steelblue;
+    height:auto;
+    max-width: 250px;
+}
 
 a{
     color:darkslategray;
