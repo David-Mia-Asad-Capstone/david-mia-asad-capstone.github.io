@@ -9,6 +9,12 @@ body{
     display:flex;
     justify-content: center;
 }
+#resturant_photo{
+    
+    border: 1px solid steelblue;
+    height:auto;
+    max-width: 250px;
+}
 
   
 #bar_container {
