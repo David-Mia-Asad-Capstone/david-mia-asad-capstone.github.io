@@ -4,7 +4,20 @@ body{
     color:darkslategray;
     margin-right:auto;
     margin-left:auto;
+    margin: 0 auto;
+    width:100%;
+    display:flex;
+    justify-content: center;
 }
+
+  
+#bar_container {
+    display:block;
+    justify-content: center;
+    width: 950px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
 
 a{
     color:darkslategray;
@@ -17,7 +30,13 @@ a{
    justify-content: center;
 }
 
+svg{
+    margin: 0 auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
 
+}
 svg text{
     font-size: 9px;  
 }
@@ -28,18 +47,17 @@ svg text{
 }   
 
 #story_body{
+    max-width: 100%;
     margin-right:auto;
     margin-left:auto;
+}
+
+body p, h1{
     max-width:650px;
-}
-
-#bar_container{
     margin-right:auto;
     margin-left:auto;
-    display: flex;
-    justify-content:center;
-
 }
+
 
 #adams_clip{
     display: flex;
@@ -51,7 +69,8 @@ svg text{
     margin-right:auto;
     margin-left:auto;
     height:315px;
-    width: 550px
+    width:100%;
+    max-width: 550px
 }
 
 
@@ -67,6 +86,7 @@ svg text{
 }
 
 #map{ /* https://www.jawg.io/docs/integration/maplibre-gl-js/change-style/ – styling resources */ 
+    max-width:650px;
     min-height: 400px;
     height: 100%;
     margin-right:auto;
@@ -106,10 +126,12 @@ svg text{
 
 
 @media (max-width: 450px), screen and (orientation: portrait), not (orientation:landscape){
-    #story_body {
-      max-width:450px;
+    body {
+      
+      max-width:400px;
       margin-left:auto;
       margin-right:auto;
+      margin:0 auto;
     }
     #nav{
         margin-left:auto;
@@ -122,12 +144,20 @@ svg text{
         padding-top:10px;
         padding-bottom:20px;
     }
-    /* #container, #bar_container, #adams_clip, #map{
-        margin-left:auto;
-        margin-right:auto;
-        height:auto;
-        width: 100%;
-        max-width:450px;
-    } */
+    #bar_container{
+        width: 400px;
+        height: 100%;
+        max-width: 100%;
+    
+      }
+      #bar_container svg text, #bar_container svg a {
+        font-size: 9px;
+      }
 
-  }
+      #bar_container svg .tick text{
+        font-size: 6.65px;
+      } 
+
+      
+    }
+

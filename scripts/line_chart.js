@@ -1,14 +1,21 @@
 
 
-const margin = {top: 40, right: 60, bottom: 60, left: 60},
-      width = 650 - margin.left - margin.right,
-      height = 400 - margin.top - margin.bottom;
+
+const margin = { top: 40, right: 60, bottom: 60, left: 60 },
+      width = 530, 
+      height = 400;
+
 
 const lineChart = d3.select("#container").append("svg")
-  .attr("width", width + margin.left + margin.right)
-  .attr("height", height + margin.top + margin.bottom)
-  .append("g")
-  .attr("transform", `translate(${margin.left},${margin.top})`);
+.attr("viewBox", `0 0 ${width + margin.left + margin.right} ${height + margin.top + margin.bottom}`)
+.style("max-width", "650px")
+.style("width", "100%")
+.attr("preserveAspectRatio", "xMinYMin meet")
+.attr("height", height + margin.top + margin.bottom)
+.style("height", "auto")
+.append("g")
+.attr("transform", `translate(${margin.left},${margin.top})`);
+
 
 // Append the tooltip to the body
 const lineTip = d3.select("body")
@@ -148,7 +155,7 @@ lineChart.append("path")
         lineChart.append("text") 
         .attr("x", width  - 250)
         .attr("x", 330 - margin.left - 10)
-        .attr("y", height + margin.top - 360)
+        .attr("y", height + margin.top - 460)
         .style("text-anchor", "middle")
         .style("text-align", "center")
         .style("fill","darkslategray")
