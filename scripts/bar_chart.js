@@ -1,4 +1,5 @@
 function renderBarChart() {  
+d3.select("#bar_container").select("svg").remove();
   // Set default dimensions for larger screens.
   let bar_margin = { top: 80, right: 240, bottom: 80, left: 240 };
   let baseWidth = 950;
