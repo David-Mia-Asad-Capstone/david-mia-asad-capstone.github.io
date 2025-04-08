@@ -133,10 +133,16 @@ body p, h1{
 
 @media (max-width: 460px), screen and (orientation: portrait), not (orientation:landscape){
     body {
-      max-width:380px;
+      max-width:400px;
       width:100%;
       margin:0 auto;
     }
+    body p, h1{
+        max-width:320px;
+        margin-right:auto;
+        margin-left:auto;
+    }
+    
     #nav{
         margin-left:auto;
         margin-right:auto;
@@ -152,7 +158,7 @@ body p, h1{
         width: 400px;
         height: 100%;
         max-width: 100%;
-    
+
       }
       #bar_container svg text, #bar_container svg a {
         font-size: 9px;
@@ -165,3 +171,41 @@ body p, h1{
       
     }
 
+    @media (max-width: 390px), screen and (orientation: portrait), not (orientation:landscape){
+        
+        #bar_container{
+            width: 350px;
+            height: 100%;
+            max-width: 100%;
+    
+          }
+          #bar_container svg text, #bar_container svg a {
+            font-size: 9px;
+          }
+    
+          #bar_container svg .tick text{
+            font-size: 6.65px;
+          } 
+
+          #map{             
+            max-width:300px;
+            min-height: 200px;
+            height: 100%;
+            width:100%;
+            margin-right:auto;
+            margin-left:auto;
+            display:block;
+            margin: 0 auto;
+        }
+
+        #adams_clip{
+          
+            width:100%;
+            max-width: 330px
+        }
+        
+    
+          
+        }
+    
+    
